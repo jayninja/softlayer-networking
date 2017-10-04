@@ -11,3 +11,7 @@ In order to support LVM in IBM Bluemix (softlayer cloud). We need to handle our 
 ## disclaimer
 This is only useful until cloud-init fixes the bug around consuming network_data.json. 
 This happened out of necessity. I apologize in advance for the terrible code. 
+
+
+## pre-built
+The rpm I included is for centos 6 64bit.
