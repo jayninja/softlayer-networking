@@ -6,7 +6,7 @@ In order to support LVM in IBM Bluemix (softlayer cloud). We need to handle our 
 ## directions
 - Build this rpm.
 - install it in your image template. 
-- When you import the image into bluemix, select the cloud-init box.
+- When you import the image into bluemix, __select the cloud-init box.__
 
 ## disclaimer
 This is only useful until cloud-init fixes the bug around consuming network_data.json. 
