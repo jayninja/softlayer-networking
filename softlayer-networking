@@ -1,0 +1,25 @@
+#! /bin/bash
+#
+# softlayer-networking       Bring up/down networking
+#
+# chkconfig: 2345 09 89
+# description: Activates/Deactivates all network interfaces configured to \
+#              start at boot time.
+#
+
+# Source function library.
+. /etc/init.d/functions
+
+case "$1" in
+  start)
+	bash -x /bin/softlayer.sh > /tmp/softlayer.log
+        ;;
+  stop)
+	echo "stopped"
+        ;;
+  *)
+        echo $"Usage: $0 {start|stop}"
+        exit 2
+esac
+
+exit $rc
